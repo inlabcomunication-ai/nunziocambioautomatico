@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lavaggio Cambio Automatico · PN Autofficina Palagiano</title>
+<meta name="description" content="Lavaggio professionale ATF del cambio automatico con macchina dedicata. Sostituzione oltre il 95% del fluido. ZF, Aisin, DSG, CVT. PN Autofficina Palagiano." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --orange: #C44417;
+  --orange-hover: #A8390F;
+  --anthracite: #2B2B2B;
+  --anthracite-soft: #353535;
+  --white: #FFFFFF;
+  --gray-light: #F5F5F5;
+  --gray-mid: #E5E5E5;
+  --gray-text: #4A4A4A;
+  --gray-soft: #6E6E6E;
+  --border-dark: #404040;
+  --border-light: #DFDFDF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--white);
+  color: var(--gray-text);
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+@media (max-width: 720px) { .container { padding: 0 20px; } }
+
+/* === DECORATIVE LINES (firma del brand) === */
+.deco-lines {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+.deco-lines span {
+  display: block;
+  height: 3px;
+  background: var(--orange);
+}
+.deco-lines span:nth-child(1) { width: 38px; }
+.deco-lines span:nth-child(2) { width: 14px; }
+
+.deco-lines.white span { background: var(--white); }
+.deco-lines.center { justify-content: center; }
+
+/* === EYEBROW === */
+.eyebrow {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.eyebrow.light { color: var(--orange); }
+
+/* === BUTTONS === */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--orange-hover);
+  transform: translateY(-1px);
+}
+.btn-outline-light {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+.btn-outline-light:hover {
+  background: var(--white);
+  color: var(--anthracite);
+}
+.btn-outline-dark {
+  background: transparent;
+  color: var(--anthracite);
+  border: 2px solid var(--anthracite);
+}
+.btn-outline-dark:hover {
+  background: var(--anthracite);
+  color: var(--white);
+}
+.btn .arrow { transition: transform 0.2s; font-weight: 900; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ============ TOPBAR ============ */
+.topbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  background: var(--anthracite);
+  border-bottom: 1px solid var(--border-dark);
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logo-mark {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: var(--anthracite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-mark svg { width: 100%; height: 100%; display: block; }
+.logo-img { display: block; height: 56px; width: auto; }
+.foot-brand .logo-img { height: 96px; }
+@media (max-width: 720px) { .logo-img { height: 46px; } }
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.logo-text .t1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+.logo-text .t2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--gray-soft);
+  letter-spacing: 0.25em;
+  margin-top: 4px;
+}
+.top-cta {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.top-phone {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--white);
+  letter-spacing: 0.05em;
+}
+.top-phone span { color: var(--orange); }
+@media (max-width: 720px) {
+  .top-phone { display: none; }
+  .topbar-inner { padding: 12px 18px; }
+  .logo-mark { width: 42px; height: 42px; }
+  .logo-text .t1 { font-size: 12px; }
+  .logo-text .t2 { font-size: 9px; }
+  .topbar .btn { padding: 11px 16px; font-size: 11px; }
+}
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 150px 0 90px;
+  background: var(--anthracite);
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgba(196,68,23,0.08));
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+  .hero { padding: 120px 0 70px; }
+}
+
+h1.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(40px, 6vw, 78px);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+h1.hero-title .accent { color: var(--orange); }
+h1.hero-title .strike {
+  color: var(--gray-soft);
+  text-decoration: line-through;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 4px;
+}
+
+.hero-lead {
+  font-size: 17px;
+  color: rgba(255,255,255,0.78);
+  max-width: 560px;
+  margin-bottom: 38px;
+  line-height: 1.7;
+}
+.hero-lead strong { color: var(--white); font-weight: 700; }
+
+.cta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-trust {
+  margin-top: 50px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border-dark);
+  display: flex;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+.trust-item { display: flex; flex-direction: column; gap: 6px; }
+.trust-num {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--white);
+}
+.trust-num .sup { color: var(--orange); font-size: 24px; }
+.trust-lbl {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+/* HERO TECH CARD */
+.tech-card {
+  background: var(--anthracite-soft);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  padding: 30px;
+  position: relative;
+}
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: -1px; left: 24px;
+  width: 80px; height: 4px;
+  background: var(--orange);
+}
+.tech-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border-dark);
+  margin-bottom: 20px;
+}
+.tech-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+}
+.tech-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--orange);
+  text-transform: uppercase;
+}
+.tech-status::before {
+  content: "";
+  width: 8px; height: 8px;
+  background: var(--orange);
+  border-radius: 50%;
+}
+
+.tech-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+}
+.tech-row:last-child { border-bottom: none; }
+.tech-lbl {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+}
+.tech-val {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 13px;
+}
+.tech-val.hl { color: var(--orange); }
+
+.gauge {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-dark);
+}
+.gauge-lbl {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.gauge-lbl strong { color: var(--orange); font-size: 14px; }
+.gauge-bar {
+  height: 10px;
+  background: var(--anthracite);
+  border: 1px solid var(--border-dark);
+  overflow: hidden;
+  border-radius: 2px;
+}
+.gauge-fill {
+  height: 100%;
+  width: 95%;
+  background: var(--orange);
+}
+.gauge-comp {
+  margin-top: 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+}
+.gauge-comp strong { color: var(--white); text-decoration: line-through; text-decoration-color: var(--orange); }
+
+/* ============ SECTIONS ============ */
+section { padding: 110px 0; position: relative; }
+@media (max-width: 720px) { section { padding: 75px 0; } }
+
+.section-light { background: var(--white); }
+.section-gray { background: var(--gray-light); }
+.section-dark { background: var(--anthracite); color: var(--white); }
+
+h2.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 4.4vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  max-width: 880px;
+  color: var(--anthracite);
+}
+h2.section-title .accent { color: var(--orange); }
+.section-dark h2.section-title { color: var(--white); }
+
+.section-lead {
+  font-size: 17px;
+  color: var(--gray-text);
+  max-width: 720px;
+  margin-bottom: 60px;
+  line-height: 1.7;
+}
+.section-dark .section-lead { color: rgba(255,255,255,0.75); }
+.section-lead strong { color: var(--anthracite); font-weight: 700; }
+.section-dark .section-lead strong { color: var(--white); }
+
+/* ============ WHY SECTION ============ */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 900px) { .why-grid { grid-template-columns: 1fr; } }
+
+.why-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-top: 4px solid var(--orange);
+  padding: 36px 30px;
+  border-radius: 4px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -15px rgba(0,0,0,0.18);
+}
+.why-num {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--orange);
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+.why-icon {
+  width: 44px; height: 44px;
+  color: var(--orange);
+  margin-bottom: 22px;
+  stroke-width: 1.8;
+}
+.why-h {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--anthracite);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.why-p {
+  color: var(--gray-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.warning-bar {
+  margin-top: 50px;
+  padding: 28px 32px;
+  background: var(--anthracite);
+  border-left: 5px solid var(--orange);
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+.warning-icon { flex-shrink: 0; color: var(--orange); margin-top: 2px; }
+.warning-text {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.82);
+}
+.warning-text strong { color: var(--white); font-weight: 700; }
+@media (max-width: 600px) {
+  .warning-bar { flex-direction: column; padding: 22px; }
+}
+
+/* ============ COMPARISON ============ */
+.compare-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 16px;
+}
+@media (max-width: 800px) { .compare-table { grid-template-columns: 1fr; } }
+
+.compare-col {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 36px 30px;
+  border-radius: 4px;
+  position: relative;
+}
+.compare-col.featured {
+  background: var(--anthracite);
+  color: var(--white);
+  border: none;
+}
+.compare-col.featured::before {
+  content: "RACCOMANDATO";
+  position: absolute;
+  top: -12px; left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  background: var(--orange);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 3px;
+}
+
+.compare-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--gray-soft);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.compare-col.featured .compare-name { color: rgba(255,255,255,0.6); }
+
+.compare-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  color: var(--anthracite);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.compare-col.featured .compare-title { color: var(--white); }
+
+.compare-pct {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1;
+  color: var(--anthracite);
+  letter-spacing: -0.04em;
+  margin-bottom: 6px;
+}
+.compare-pct .pct-small { font-size: 32px; }
+.compare-col.featured .compare-pct { color: var(--orange); }
+
+.compare-pct-lbl {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--gray-soft);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+.compare-col.featured .compare-pct-lbl { color: rgba(255,255,255,0.6); }
+
+.compare-list { list-style: none; padding: 0; margin: 0; }
+.compare-list li {
+  padding: 11px 0;
+  font-size: 14.5px;
+  color: var(--gray-text);
+  border-bottom: 1px solid var(--border-light);
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.compare-list li:last-child { border-bottom: none; }
+.compare-list li::before {
+  content: "—";
+  color: var(--orange);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.compare-col.featured .compare-list li {
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid var(--border-dark);
+}
+.compare-col.featured .compare-list li::before { color: var(--orange); }
+
+/* ============ PROCESS ============ */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .process-grid { grid-template-columns: 1fr; gap: 50px; }
+}
+
+.process-steps { position: relative; }
+.process-steps::before {
+  content: "";
+  position: absolute;
+  left: 23px; top: 0; bottom: 12px;
+  width: 2px;
+  background: var(--gray-mid);
+}
+
+.step {
+  position: relative;
+  padding-left: 70px;
+  padding-bottom: 32px;
+}
+.step:last-child { padding-bottom: 0; }
+.step-num {
+  position: absolute;
+  left: 0; top: 0;
+  width: 48px; height: 48px;
+  background: var(--orange);
+  border-radius: 4px;
+  display: grid; place-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+.step-h {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: var(--anthracite);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.step-p {
+  color: var(--gray-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.process-aside {
+  position: sticky;
+  top: 110px;
+  background: var(--anthracite);
+  padding: 36px;
+  border-radius: 4px;
+  border-top: 4px solid var(--orange);
+}
+.aside-h {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.aside-list { list-style: none; padding: 0; margin: 0; }
+.aside-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border-dark);
+  font-size: 14px;
+  display: flex; justify-content: space-between; gap: 12px;
+  color: rgba(255,255,255,0.7);
+}
+.aside-list li:last-child { border-bottom: none; }
+.aside-list strong {
+  color: var(--white);
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ============ COMPATIBILITY ============ */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+@media (max-width: 900px) { .brand-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.brand-cell {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 4px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.brand-cell:hover {
+  border-color: var(--orange);
+  transform: translateY(-3px);
+}
+.brand-name-x {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  color: var(--anthracite);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.brand-models {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--orange);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ============ SIGNALS ============ */
+.signals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 30px;
+}
+@media (max-width: 720px) { .signals-grid { grid-template-columns: 1fr; } }
+
+.signal {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--orange);
+  border-radius: 4px;
+}
+.signal-icon {
+  width: 32px; height: 32px;
+  color: var(--orange);
+  flex-shrink: 0;
+  stroke-width: 1.8;
+}
+.signal-text { font-size: 15px; line-height: 1.5; }
+.signal-text strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--anthracite);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.signal-text span { color: var(--gray-text); }
+
+/* ============ CTA FORM ============ */
+.cta-section {
+  background: var(--anthracite);
+  padding: 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+.cta-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+@media (max-width: 900px) { .cta-grid { grid-template-columns: 1fr; gap: 50px; } }
+
+.cta-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: clamp(34px, 4.6vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.cta-title .accent { color: var(--orange); }
+
+.cta-section p.cta-sub {
+  color: rgba(255,255,255,0.75);
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.cta-features {
+  list-style: none; padding: 0;
+  margin: 30px 0 0;
+}
+.cta-features li {
+  padding: 12px 0;
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.85);
+  display: flex; gap: 14px; align-items: center;
+  border-bottom: 1px solid var(--border-dark);
+}
+.cta-features li::before {
+  content: "✓";
+  color: var(--orange);
+  font-weight: 800;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.form-box {
+  background: var(--white);
+  padding: 42px;
+  border-radius: 4px;
+  border-top: 5px solid var(--orange);
+}
+@media (max-width: 720px) { .form-box { padding: 28px; } }
+
+.form-h {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: var(--anthracite);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+.form-sub {
+  color: var(--gray-text);
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+.field { margin-bottom: 16px; }
+.field label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--gray-soft);
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: var(--gray-light);
+  border: 1px solid var(--border-light);
+  color: var(--anthracite);
+  padding: 13px 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14.5px;
+  border-radius: 4px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  background: var(--white);
+}
+.field textarea { resize: vertical; min-height: 90px; }
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 480px) { .field-row { grid-template-columns: 1fr; } }
+
+.form-submit {
+  width: 100%;
+  padding: 17px;
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 6px;
+}
+.form-submit:hover { background: var(--orange-hover); }
+
+.form-foot {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-light);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--gray-soft);
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+.form-foot strong { color: var(--orange); }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 30px 10px;
+}
+.form-success.show { display: block; }
+.success-icon {
+  width: 60px; height: 60px;
+  margin: 0 auto 16px;
+  background: var(--orange);
+  border-radius: 50%;
+  display: grid; place-items: center;
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 900;
+}
+.form-success h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--anthracite);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.form-success p { color: var(--gray-text); font-size: 14.5px; }
+
+/* ============ FAQ ============ */
+.faq-list { max-width: 920px; }
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.faq-item.open { border-color: var(--orange); }
+
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 22px 60px 22px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--anthracite);
+  cursor: pointer;
+  position: relative;
+  letter-spacing: -0.005em;
+  transition: color 0.15s;
+}
+.faq-q:hover { color: var(--orange); }
+.faq-q::after {
+  content: "+";
+  position: absolute;
+  right: 24px; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--orange);
+  transition: transform 0.25s;
+}
+.faq-item.open .faq-q::after { content: "−"; }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  color: var(--gray-text);
+  font-size: 14.5px;
+  line-height: 1.7;
+  padding: 0 24px;
+}
+.faq-item.open .faq-a {
+  max-height: 600px;
+  padding: 4px 24px 24px;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background: var(--anthracite);
+  color: var(--white);
+  padding: 70px 0 30px;
+  border-top: 4px solid var(--orange);
+}
+.foot-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+.foot-brand .logo { margin-bottom: 16px; }
+.foot-brand p {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  max-width: 380px;
+  line-height: 1.7;
+}
+
+.foot-col h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--orange);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.foot-col p, .foot-col a {
+  display: block;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.foot-col a:hover { color: var(--orange); }
+
+.foot-bottom {
+  border-top: 1px solid var(--border-dark);
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ============ STICKY MOBILE CTA ============ */
+.sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 40;
+  padding: 10px;
+  background: var(--anthracite);
+  border-top: 1px solid var(--border-dark);
+  gap: 8px;
+}
+.sticky-cta .btn { flex: 1; padding: 13px; font-size: 11px; }
+@media (max-width: 720px) {
+  .sticky-cta { display: flex; }
+  footer { padding-bottom: 90px; }
+}
+
+/* ============ REVEAL ANIM ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#" class="logo">
+      <img src="logo.png" alt="PN Autofficina Palagiano" class="logo-img">
+    </a>
+    <div class="top-cta">
+      <span class="top-phone">TEL <span>324 999 1990</span></span>
+      <a href="#prenota" class="btn btn-primary">PRENOTA <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="deco-lines white"><span></span><span></span></div>
+        <div class="eyebrow">SERVIZIO SPECIALISTICO · CAMBI AUTOMATICI</div>
+
+        <h1 class="hero-title">
+          Il tuo cambio<br>
+          non si <span class="strike">rabbocca</span>.<br>
+          si <span class="accent">lava davvero.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Il classico "cambio olio" sostituisce <strong>solo il 40%</strong> del fluido. Il resto — sporco, ossidato, pieno di particelle — resta nel convertitore di coppia e nel radiatore. Da noi il <strong>lavaggio professionale ATF</strong> ne sostituisce <strong>oltre il 95%</strong>. Con macchina dedicata, filtro nuovo, fluido OEM e reset adattività.
+        </p>
+
+        <div class="cta-row">
+          <a href="#prenota" class="btn btn-primary">PRENOTA DIAGNOSI GRATUITA <span class="arrow">→</span></a>
+          <a href="#processo" class="btn btn-outline-light">COME LO FACCIAMO</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div class="trust-num">95<span class="sup">%</span></div>
+            <div class="trust-lbl">Ricambio fluido</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">7+</div>
+            <div class="trust-lbl">Marchi cambi gestiti</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-num">OEM</div>
+            <div class="trust-lbl">Solo fluidi omologati</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TECH CARD -->
+      <div class="tech-card reveal">
+        <div class="tech-card-head">
+          <span class="tech-card-title">LIVE DIAGNOSTIC</span>
+          <span class="tech-status">SISTEMA OK</span>
+        </div>
+
+        <div class="tech-row"><span class="tech-lbl">PROTOCOLLO</span><span class="tech-val">ATF FLUSH</span></div>
+        <div class="tech-row"><span class="tech-lbl">CAMBIO RILEVATO</span><span class="tech-val hl">ZF 8HP70</span></div>
+        <div class="tech-row"><span class="tech-lbl">TEMP. OPERATIVA</span><span class="tech-val">42.3 °C</span></div>
+        <div class="tech-row"><span class="tech-lbl">FLUIDO IN</span><span class="tech-val hl">Lifeguard 8</span></div>
+        <div class="tech-row"><span class="tech-lbl">FILTRO</span><span class="tech-val">SOSTITUITO ✓</span></div>
+        <div class="tech-row"><span class="tech-lbl">CODICI ERRORE</span><span class="tech-val">NESSUNO</span></div>
+
+        <div class="gauge">
+          <div class="gauge-lbl">
+            <span>EFFICIENZA RICAMBIO</span>
+            <strong>96.4%</strong>
+          </div>
+          <div class="gauge-bar"><div class="gauge-fill"></div></div>
+          <div class="gauge-comp">cambio standard officina: <strong>~40%</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="section-light" id="perche">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">PERCHÉ FARLO</div>
+      <h2 class="section-title">Il cambio automatico è la <span class="accent">parte più costosa</span> della tua auto. Ed è quella che nessuno manutiene.</h2>
+      <p class="section-lead">
+        Un cambio nuovo costa tra i 4.000 e gli 8.000 euro. Una revisione completa può superarli. Un lavaggio ATF a regola d'arte costa una frazione di quella cifra — e nella maggior parte dei casi <strong>evita di doverlo fare</strong>.
+      </p>
+    </div>
+
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <div class="why-num">01 — ATTRITO</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+        <h3 class="why-h">L'olio si degrada anche se non lo vedi</h3>
+        <p class="why-p">L'ATF perde le sue proprietà detergenti, anti-attrito e termiche con il calore e i cicli di utilizzo. Sotto i 50.000 km lavora bene; oltre, comincia a "cuocere" e a depositare residui nei circuiti del corpo valvole.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02 — CALORE</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 4v10.5a3.5 3.5 0 1 1-4 0V4a2 2 0 0 1 4 0z"/><circle cx="12" cy="17.5" r="1.5" fill="currentColor"/></svg>
+        <h3 class="why-h">+10 °C = metà vita utile</h3>
+        <p class="why-p">Il principale nemico del cambio automatico è il surriscaldamento. Olio vecchio raffredda peggio. Un degrado anche minimo del fluido raddoppia lo stress termico sulle frizioni interne e sul convertitore.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03 — ELETTRONICA</div>
+        <svg class="why-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M9 4v-2M15 4v-2M9 22v-2M15 22v-2M4 9h-2M4 15h-2M22 9h-2M22 15h-2"/><rect x="9" y="9" width="6" height="6"/></svg>
+        <h3 class="why-h">Il corpo valvole si intasa in silenzio</h3>
+        <p class="why-p">I cambi moderni gestiscono pressioni e tempi al millisecondo tramite elettrovalvole. Quando l'olio è sporco, le solenoidi rallentano: cambi marcia ritardati, strappi, codici errore — sintomi che spesso precedono il guasto serio.</p>
+      </div>
+    </div>
+
+    <div class="warning-bar reveal">
+      <svg class="warning-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+      <div class="warning-text">
+        <strong>Un cambio mai manutenuto e con sintomi conclamati di usura</strong> <em>non va lavato senza una diagnosi preliminare</em>: il flush può liberare depositi e peggiorare la situazione. Per questo da noi <strong>la diagnosi è sempre il primo passo</strong>, ed è gratuita.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARISON ============ -->
+<section class="section-gray" id="differenza">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">LA DIFFERENZA</div>
+      <h2 class="section-title">Non tutti i "cambi olio" sono uguali. <span class="accent">Anzi.</span></h2>
+      <p class="section-lead">
+        Quando senti dire "ti faccio il cambio olio al cambio", chiedi quale dei tre. Solo uno fa davvero il suo lavoro.
+      </p>
+    </div>
+
+    <div class="compare-table reveal">
+      <div class="compare-col">
+        <div class="compare-name">OPZIONE A</div>
+        <div class="compare-title">Rabbocco</div>
+        <div class="compare-pct">~5<span class="pct-small">%</span></div>
+        <div class="compare-pct-lbl">FLUIDO SOSTITUITO</div>
+        <ul class="compare-list">
+          <li>Solo integrazione del livello</li>
+          <li>Olio vecchio resta integralmente</li>
+          <li>Nessun beneficio reale</li>
+          <li>Filtro non toccato</li>
+        </ul>
+      </div>
+
+      <div class="compare-col">
+        <div class="compare-name">OPZIONE B</div>
+        <div class="compare-title">Cambio parziale</div>
+        <div class="compare-pct">~40<span class="pct-small">%</span></div>
+        <div class="compare-pct-lbl">FLUIDO SOSTITUITO</div>
+        <ul class="compare-list">
+          <li>Drenaggio dalla coppa</li>
+          <li>Fluido residuo nel convertitore</li>
+          <li>Olio nuovo si miscela col vecchio</li>
+          <li>Rapido ma incompleto</li>
+        </ul>
+      </div>
+
+      <div class="compare-col featured">
+        <div class="compare-name">OPZIONE C — LA NOSTRA</div>
+        <div class="compare-title">Lavaggio completo ATF</div>
+        <div class="compare-pct">95<span class="pct-small">%+</span></div>
+        <div class="compare-pct-lbl">FLUIDO SOSTITUITO</div>
+        <ul class="compare-list">
+          <li>Macchina dedicata in linea sul radiatore</li>
+          <li>Sostituzione filtro e guarnizione coppa</li>
+          <li>Fluido OEM specifico per il tuo cambio</li>
+          <li>Reset adattività TCU e collaudo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section-light" id="processo">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">LA NOSTRA PROCEDURA</div>
+      <h2 class="section-title">Sette passaggi. <span class="accent">Zero scorciatoie.</span></h2>
+      <p class="section-lead">
+        È la stessa procedura prescritta dai costruttori. Nessun additivo "miracoloso", nessun fluido universale, nessuna pressione esterna sul circuito. Solo metodo.
+      </p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-steps reveal">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3 class="step-h">Diagnosi preliminare</h3>
+          <p class="step-p">Lettura centralina con strumento OEM-level, verifica codici attivi, controllo temperatura ATF a regime. Se il cambio è già in avaria conclamata, te lo diciamo prima — non dopo.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3 class="step-h">Riscaldamento operativo</h3>
+          <p class="step-p">Portiamo l'olio alla temperatura di esercizio prevista (35–45 °C sulla maggior parte degli ZF e Aisin). Misurazione a freddo o a temperatura sbagliata falsa il livello.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3 class="step-h">Sostituzione filtro e coppa</h3>
+          <p class="step-p">Apertura coppa, pulizia magnete, sostituzione filtro e guarnizione. Lavare un cambio senza cambiare il filtro è come pulire l'acqua e tenere il bicchiere sporco.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3 class="step-h">Collegamento macchina ATF</h3>
+          <p class="step-p">Collegamento sui raccordi del radiatore. La pompa interna del cambio fa circolare il fluido, la macchina sostituisce l'esausto in tempo reale. Pressione e flusso restano bilanciati.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <h3 class="step-h">Carica con fluido OEM</h3>
+          <p class="step-p">ZF Lifeguard 8, Shell M-1375.4, Toyota WS, Mercedes 236.x — solo specifiche omologate per il tuo cambio. Mai universali. Mai miscelati.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">06</div>
+          <h3 class="step-h">Controllo livello a caldo</h3>
+          <p class="step-p">Verifica del livello dal tappo laterale alla temperatura esatta prescritta dal costruttore. Senza astina, senza approssimazioni.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">07</div>
+          <h3 class="step-h">Reset TCU e collaudo</h3>
+          <p class="step-p">Azzeramento dei valori adattativi della centralina cambio e ciclo di apprendimento su strada. Il cambio "impara" di nuovo le tue marce.</p>
+        </div>
+      </div>
+
+      <div class="process-aside reveal">
+        <h3 class="aside-h">Dati Tecnici Intervento</h3>
+        <ul class="aside-list">
+          <li><span>Manodopera</span><strong>2 – 3.5 H</strong></li>
+          <li><span>Fluido impiegato</span><strong>8 – 12 L</strong></li>
+          <li><span>Ricambi inclusi</span><strong>Filtro + guarn.</strong></li>
+          <li><span>Strumentazione</span><strong>OEM + macchina</strong></li>
+          <li><span>Reset adattività</span><strong>Incluso</strong></li>
+          <li><span>Collaudo su strada</span><strong>Incluso</strong></li>
+          <li><span>Garanzia intervento</span><strong>12 Mesi</strong></li>
+        </ul>
+        <a href="#prenota" class="btn btn-primary" style="width:100%; margin-top:24px;">RICHIEDI PREVENTIVO <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPATIBILITY ============ -->
+<section class="section-gray" id="compatibilita">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">CAMBI COMPATIBILI</div>
+      <h2 class="section-title">Conosciamo il <span class="accent">tuo cambio.</span></h2>
+      <p class="section-lead">
+        Ogni famiglia di trasmissione ha le sue procedure, le sue temperature, i suoi fluidi. Lavoriamo sui principali costruttori europei e asiatici, con specifiche tecniche aggiornate.
+      </p>
+    </div>
+
+    <div class="brand-grid reveal">
+      <div class="brand-cell"><div class="brand-name-x">ZF</div><div class="brand-models">6HP · 8HP · 9HP</div></div>
+      <div class="brand-cell"><div class="brand-name-x">Aisin</div><div class="brand-models">TF-80SC · TF-81 · AWF</div></div>
+      <div class="brand-cell"><div class="brand-name-x">Mercedes</div><div class="brand-models">722.6 · 722.9 · 725</div></div>
+      <div class="brand-cell"><div class="brand-name-x">VAG DSG</div><div class="brand-models">DQ250 · DQ200 · DQ381</div></div>
+      <div class="brand-cell"><div class="brand-name-x">BMW</div><div class="brand-models">GA6 · GA8 · ZF base</div></div>
+      <div class="brand-cell"><div class="brand-name-x">Toyota</div><div class="brand-models">U-series · AB60 · CVT</div></div>
+      <div class="brand-cell"><div class="brand-name-x">CVT</div><div class="brand-models">Nissan · Subaru · Honda</div></div>
+      <div class="brand-cell"><div class="brand-name-x">PSA / FCA</div><div class="brand-models">AL4 · AT8 · EAT8</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNALS ============ -->
+<section class="section-light">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">SEGNALI DA NON IGNORARE</div>
+      <h2 class="section-title">Se la tua auto fa <span class="accent">una di queste cose</span>, non aspettare.</h2>
+      <p class="section-lead">
+        Sono i sintomi tipici di un fluido degradato. Intervenire ora costa una frazione di quanto costerà tra 6 mesi.
+      </p>
+    </div>
+
+    <div class="signals-grid reveal">
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="signal-text"><strong>Cambi marcia ritardati</strong><span>Senti una pausa tra l'accelerazione e l'innesto della marcia successiva, soprattutto a freddo.</span></div>
+      </div>
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        <div class="signal-text"><strong>Strappi o slittamenti</strong><span>L'auto "strappa" in accelerazione o sembra non trasmettere bene la potenza alle ruote.</span></div>
+      </div>
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 4v10.5a3.5 3.5 0 1 1-4 0V4a2 2 0 0 1 4 0z"/></svg>
+        <div class="signal-text"><strong>Temperatura cambio alta</strong><span>Spia sul cruscotto o sensazione di surriscaldamento in coda o in autostrada.</span></div>
+      </div>
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <div class="signal-text"><strong>Spie o codici errore</strong><span>Avvisi sui sensori di pressione o temperatura cambio — la centralina ti sta avvertendo.</span></div>
+      </div>
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12h18M12 3v18"/></svg>
+        <div class="signal-text"><strong>Manutenzione mai fatta</strong><span>Hai superato i 60.000 km (o 40.000 su DSG/CVT) senza alcun intervento sul cambio.</span></div>
+      </div>
+      <div class="signal">
+        <svg class="signal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        <div class="signal-text"><strong>"Tanto va ancora bene"</strong><span>È esattamente il momento giusto per intervenire. La manutenzione preventiva costa il 10% della riparazione.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FORM ============ -->
+<section class="cta-section" id="prenota">
+  <div class="container">
+    <div class="cta-grid">
+      <div class="reveal">
+        <div class="deco-lines white"><span></span><span></span></div>
+        <div class="eyebrow">PRENOTA ORA</div>
+        <h2 class="cta-title">Diagnosi gratuita.<br><span class="accent">Risposta in 24 ore.</span></h2>
+        <p class="cta-sub">
+          Lasciaci i tuoi dati: ti richiamiamo per fissare un appuntamento di diagnosi gratuita e — solo se l'intervento ha senso per la tua auto — un preventivo trasparente, scritto, senza sorprese.
+        </p>
+        <ul class="cta-features">
+          <li>Diagnosi cambio gratuita e senza impegno</li>
+          <li>Preventivo scritto prima di iniziare</li>
+          <li>Solo fluidi OEM omologati</li>
+          <li>Garanzia 12 mesi sull'intervento</li>
+          <li>Auto sostitutiva su richiesta</li>
+        </ul>
+      </div>
+
+      <div class="form-box reveal">
+        <form id="lead-form">
+          <div class="form-h">Richiedi appuntamento</div>
+          <div class="form-sub">Pochi dati, ti richiamiamo noi. Nessuno spam, mai.</div>
+
+          <div class="field">
+            <label>Nome e cognome</label>
+            <input type="text" name="name" placeholder="Mario Rossi" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label>Telefono</label>
+              <input type="tel" name="phone" placeholder="+39 333 1234567" required>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="email@esempio.it">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Targa</label>
+            <input type="text" name="plate" placeholder="es. AB123CD" required>
+          </div>
+
+          <div class="field">
+            <label>Sintomi o note (opzionale)</label>
+            <textarea name="notes" placeholder="Es: strappi in accelerazione, mai fatto manutenzione cambio…"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">RICHIEDI DIAGNOSI GRATUITA →</button>
+
+          <div class="form-foot">
+            <strong>RISPOSTA ENTRO 24H</strong> · DATI PROTETTI · NESSUN IMPEGNO
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✓</div>
+          <h3>Richiesta ricevuta</h3>
+          <p>Ti contatteremo entro 24 ore al numero che ci hai lasciato.<br>Grazie per la fiducia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section-gray" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="deco-lines"><span></span><span></span></div>
+      <div class="eyebrow">DOMANDE FREQUENTI</div>
+      <h2 class="section-title">Le domande che ci fanno <span class="accent">più spesso.</span></h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Ogni quanti km va fatto il lavaggio del cambio automatico?</button>
+        <div class="faq-a">Dipende dal tipo di cambio. Sui cambi a convertitore tradizionali (ZF 6HP/8HP, Aisin, Mercedes 722.x) la prassi è ogni 60.000–80.000 km. Sui doppia frizione bagnata (DSG, DCT) gli intervalli sono più stretti: 40.000–60.000 km. Sui CVT vanno seguite tassativamente le indicazioni del costruttore, spesso 40.000–60.000 km, esclusivamente con il fluido omologato.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Il mio costruttore dice che il cambio è "sigillato a vita". È vero?</button>
+        <div class="faq-a">Tecnicamente no. "A vita" significa "per la vita programmata del veicolo dal costruttore", che è molto inferiore alla vita reale di un'auto ben tenuta. Sopra i 60.000 km, un cambio dichiarato "lifetime" beneficia enormemente di un intervento di lavaggio fatto a regola d'arte.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">La mia auto ha 180.000 km e non ho mai fatto nulla al cambio. Posso fare il flush?</button>
+        <div class="faq-a">In casi così è indispensabile partire da una diagnosi preliminare prima di decidere. Lavare un cambio molto datato e mai manutenuto, soprattutto se mostra già sintomi, può liberare depositi e peggiorare la situazione. Per questo da noi la diagnosi è sempre il primo passo, è gratuita e obbligatoria: se il rischio è alto, ti consigliamo di non fare l'intervento e ti spieghiamo perché.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quanto costa il servizio?</button>
+        <div class="faq-a">Il costo varia in base al veicolo, alla quantità di fluido richiesta (8–12 litri) e alla complessità del cambio. Dopo la diagnosi gratuita ti diamo un preventivo scritto, dettagliato e senza sorprese. In ogni caso è una frazione di quanto costerebbe una riparazione del cambio dovuta a manutenzione omessa.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quanto tempo serve?</button>
+        <div class="faq-a">L'intervento completo richiede dalle 2 alle 3 ore e mezza, compreso il collaudo su strada. Su appuntamento ti restituiamo l'auto in giornata.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Cosa succede se non faccio nulla?</button>
+        <div class="faq-a">Il fluido continua a degradarsi e a depositare residui nel corpo valvole, sulle elettrovalvole e sulle frizioni interne. I primi sintomi (strappi, cambi ritardati) sono già segnali avanzati. Quando arriva il guasto, la riparazione costa tra i 4.000 e gli 8.000 euro — o più, in caso di sostituzione completa.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo">
+          <img src="logo.png" alt="PN Autofficina Palagiano" class="logo-img">
+        </div>
+        <p style="margin-top:16px;">Officina specializzata in manutenzione e diagnosi di cambi automatici, doppia frizione e CVT. Strumentazione OEM, fluidi omologati, procedure a regola d'arte.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Contatti</h5>
+        <p>Tel · 324 999 1990</p>
+        <p>Via Caduti di Nassirya · 74019 Palagiano (TA)</p>
+      </div>
+      <div class="foot-col">
+        <h5>Orari</h5>
+        <p>Lun – Ven · 8:00 – 13:00</p>
+        <p>Lun – Ven · 15:00 – 19:00</p>
+        <p>Sab · Chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PN AUTOFFICINA · P.IVA 00000000000</span>
+      <span>PRIVACY · COOKIE · TERMINI</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <a href="tel:+393249991990" class="btn btn-outline-light">CHIAMA</a>
+  <a href="#prenota" class="btn btn-primary">PRENOTA →</a>
+</div>
+
+<script type="module">
+// ========= FIREBASE CONFIG =========
+// Sostituisci questi valori con quelli del tuo progetto Firebase
+// (vedi README per come ottenerli)
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC-VdceIQHo2xynIjWZolkYL1a6qp5N230",
+  authDomain: "nunzio-b7e31.firebaseapp.com",
+  projectId: "nunzio-b7e31",
+  storageBucket: "nunzio-b7e31.firebasestorage.app",
+  messagingSenderId: "411532469997",
+  appId: "1:411532469997:web:c3ab6bc30fefa29bdd0ee4"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// ========= UI SCRIPT =========
+// Reveal on scroll
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+// ========= FORM SUBMIT =========
+const form = document.getElementById('lead-form');
+const submitBtn = form.querySelector('.form-submit');
+const originalBtnText = submitBtn.textContent;
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'INVIO IN CORSO…';
+
+  const data = {
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    email: form.email.value.trim(),
+    plate: form.plate.value.trim(),
+    notes: form.notes.value.trim(),
+    status: 'nuovo',
+    createdAt: serverTimestamp(),
+    source: 'landing-cambio-automatico'
+  };
+
+  try {
+    await addDoc(collection(db, 'leads'), data);
+    form.style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  } catch (err) {
+    console.error('Errore invio lead:', err);
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+    alert("Errore nell'invio. Riprova o chiamaci al 324 999 1990.");
+  }
+});
+</script>
+
+</body>
+</html>
