@@ -160,6 +160,9 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
 }
 .logo-mark svg { width: 100%; height: 100%; display: block; }
+.logo-img { display: block; height: 56px; width: auto; }
+.foot-brand .logo-img { height: 96px; }
+@media (max-width: 720px) { .logo-img { height: 46px; } }
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -1107,22 +1110,7 @@ footer {
 <header class="topbar">
   <div class="topbar-inner">
     <a href="#" class="logo">
-      <div class="logo-mark">
-        <!-- Logo PN ricreato in SVG -->
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="PN Autofficina">
-          <!-- linee decorative sopra -->
-          <rect x="22" y="14" width="22" height="3" fill="#FFFFFF"/>
-          <rect x="46" y="14" width="8" height="3" fill="#FFFFFF"/>
-          <!-- Lettera P arancione -->
-          <path d="M20 22 L20 78 L34 78 L34 60 L46 60 C56 60 62 53 62 41 C62 29 56 22 46 22 L20 22 Z M34 34 L44 34 C48 34 50 36.5 50 41 C50 45.5 48 48 44 48 L34 48 L34 34 Z" fill="#C44417"/>
-          <!-- Lettera N bianca -->
-          <path d="M52 22 L52 78 L66 78 L66 48 L80 78 L82 78 L82 22 L68 22 L68 52 L54 22 L52 22 Z" fill="#FFFFFF"/>
-        </svg>
-      </div>
-      <div class="logo-text">
-        <span class="t1">AUTOFFICINA</span>
-        <span class="t2">P A L A G I A N O</span>
-      </div>
+      <img src="logo.png" alt="PN Autofficina Palagiano" class="logo-img">
     </a>
     <div class="top-cta">
       <span class="top-phone">TEL <span>324 999 1990</span></span>
@@ -1233,7 +1221,7 @@ footer {
     <div class="warning-bar reveal">
       <svg class="warning-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
       <div class="warning-text">
-        <strong>Attenzione: il lavaggio non è per tutti.</strong> Un cambio con oltre 150.000 km mai manutenuto e con sintomi conclamati di usura <em>non va lavato senza una diagnosi preliminare</em>: il flush può liberare depositi e peggiorare la situazione. Per questo da noi <strong>la diagnosi è sempre il primo passo</strong>, ed è gratuita.
+        <strong>Un cambio mai manutenuto e con sintomi conclamati di usura</strong> <em>non va lavato senza una diagnosi preliminare</em>: il flush può liberare depositi e peggiorare la situazione. Per questo da noi <strong>la diagnosi è sempre il primo passo</strong>, ed è gratuita.
       </div>
     </div>
   </div>
@@ -1348,7 +1336,7 @@ footer {
       <div class="process-aside reveal">
         <h3 class="aside-h">Dati Tecnici Intervento</h3>
         <ul class="aside-list">
-          <li><span>Manodopera</span><strong>1.5 – 2.5 H</strong></li>
+          <li><span>Manodopera</span><strong>2 – 3.5 H</strong></li>
           <li><span>Fluido impiegato</span><strong>8 – 12 L</strong></li>
           <li><span>Ricambi inclusi</span><strong>Filtro + guarn.</strong></li>
           <li><span>Strumentazione</span><strong>OEM + macchina</strong></li>
@@ -1469,15 +1457,9 @@ footer {
             </div>
           </div>
 
-          <div class="field-row">
-            <div class="field">
-              <label>Marca auto</label>
-              <input type="text" name="brand" placeholder="es. BMW">
-            </div>
-            <div class="field">
-              <label>Modello / KM</label>
-              <input type="text" name="model" placeholder="es. 320d · 95.000 km">
-            </div>
+          <div class="field">
+            <label>Targa</label>
+            <input type="text" name="plate" placeholder="es. AB123CD" required>
           </div>
 
           <div class="field">
@@ -1522,11 +1504,7 @@ footer {
       </div>
       <div class="faq-item">
         <button class="faq-q">La mia auto ha 180.000 km e non ho mai fatto nulla al cambio. Posso fare il flush?</button>
-        <div class="faq-a">Forse no, e te lo diremo prima di iniziare. Lavare un cambio molto datato e mai manutenuto, soprattutto se mostra già sintomi, può liberare depositi e peggiorare la situazione. È esattamente per questo che la diagnosi preliminare è gratuita e obbligatoria: se il rischio è alto, ti consigliamo di non fare l'intervento e ti spieghiamo perché.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Usate additivi o "pulitori" per il cambio?</button>
-        <div class="faq-a">No, mai. La maggior parte dei costruttori — ZF in primis — sconsiglia esplicitamente l'uso di additivi detergenti, perché possono danneggiare guarnizioni interne e frizioni. La nostra procedura si basa solo sulla sostituzione completa del fluido e sul filtro nuovo.</div>
+        <div class="faq-a">In casi così è indispensabile partire da una diagnosi preliminare prima di decidere. Lavare un cambio molto datato e mai manutenuto, soprattutto se mostra già sintomi, può liberare depositi e peggiorare la situazione. Per questo da noi la diagnosi è sempre il primo passo, è gratuita e obbligatoria: se il rischio è alto, ti consigliamo di non fare l'intervento e ti spieghiamo perché.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Quanto costa il servizio?</button>
@@ -1534,7 +1512,7 @@ footer {
       </div>
       <div class="faq-item">
         <button class="faq-q">Quanto tempo serve?</button>
-        <div class="faq-a">L'intervento completo richiede dalle 1,5 alle 2,5 ore di manodopera, compreso il collaudo su strada. Su appuntamento ti restituiamo l'auto in giornata.</div>
+        <div class="faq-a">L'intervento completo richiede dalle 2 alle 3 ore e mezza, compreso il collaudo su strada. Su appuntamento ti restituiamo l'auto in giornata.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q">Cosa succede se non faccio nulla?</button>
@@ -1550,32 +1528,20 @@ footer {
     <div class="foot-grid">
       <div class="foot-brand">
         <div class="logo">
-          <div class="logo-mark">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <rect x="22" y="14" width="22" height="3" fill="#FFFFFF"/>
-              <rect x="46" y="14" width="8" height="3" fill="#FFFFFF"/>
-              <path d="M20 22 L20 78 L34 78 L34 60 L46 60 C56 60 62 53 62 41 C62 29 56 22 46 22 L20 22 Z M34 34 L44 34 C48 34 50 36.5 50 41 C50 45.5 48 48 44 48 L34 48 L34 34 Z" fill="#C44417"/>
-              <path d="M52 22 L52 78 L66 78 L66 48 L80 78 L82 78 L82 22 L68 22 L68 52 L54 22 L52 22 Z" fill="#FFFFFF"/>
-            </svg>
-          </div>
-          <div class="logo-text">
-            <span class="t1">AUTOFFICINA</span>
-            <span class="t2">P A L A G I A N O</span>
-          </div>
+          <img src="logo.png" alt="PN Autofficina Palagiano" class="logo-img">
         </div>
         <p style="margin-top:16px;">Officina specializzata in manutenzione e diagnosi di cambi automatici, doppia frizione e CVT. Strumentazione OEM, fluidi omologati, procedure a regola d'arte.</p>
       </div>
       <div class="foot-col">
         <h5>Contatti</h5>
         <p>Tel · 324 999 1990</p>
-        <p>Email · info@pnautofficina.it</p>
         <p>Via Caduti di Nassirya · 74019 Palagiano (TA)</p>
       </div>
       <div class="foot-col">
         <h5>Orari</h5>
         <p>Lun – Ven · 8:00 – 13:00</p>
         <p>Lun – Ven · 15:00 – 19:00</p>
-        <p>Sab · su appuntamento</p>
+        <p>Sab · Chiuso</p>
       </div>
     </div>
     <div class="foot-bottom">
@@ -1591,7 +1557,26 @@ footer {
   <a href="#prenota" class="btn btn-primary">PRENOTA →</a>
 </div>
 
-<script>
+<script type="module">
+// ========= FIREBASE CONFIG =========
+// Sostituisci questi valori con quelli del tuo progetto Firebase
+// (vedi README per come ottenerli)
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "INSERISCI_API_KEY",
+  authDomain: "INSERISCI_PROJECT_ID.firebaseapp.com",
+  projectId: "INSERISCI_PROJECT_ID",
+  storageBucket: "INSERISCI_PROJECT_ID.appspot.com",
+  messagingSenderId: "INSERISCI_SENDER_ID",
+  appId: "INSERISCI_APP_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+// ========= UI SCRIPT =========
 // Reveal on scroll
 const io = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1613,11 +1598,37 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// Form submit (demo)
-document.getElementById('lead-form').addEventListener('submit', (e) => {
+// ========= FORM SUBMIT =========
+const form = document.getElementById('lead-form');
+const submitBtn = form.querySelector('.form-submit');
+const originalBtnText = submitBtn.textContent;
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  document.getElementById('lead-form').style.display = 'none';
-  document.getElementById('form-success').classList.add('show');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'INVIO IN CORSO…';
+
+  const data = {
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    email: form.email.value.trim(),
+    plate: form.plate.value.trim(),
+    notes: form.notes.value.trim(),
+    status: 'nuovo',
+    createdAt: serverTimestamp(),
+    source: 'landing-cambio-automatico'
+  };
+
+  try {
+    await addDoc(collection(db, 'leads'), data);
+    form.style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  } catch (err) {
+    console.error('Errore invio lead:', err);
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+    alert("Errore nell'invio. Riprova o chiamaci al 324 999 1990.");
+  }
 });
 </script>
 

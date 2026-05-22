@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /leads/{leadId} {
+      // Chiunque può creare un lead dal form pubblico
+      allow create: if
+        request.resource.data.keys().hasOnly(
+          ['name','phone','email','plate','notes','status','createdAt','source']
+        ) &&
+        request.resource.data.name is string &&
+        request.resource.data.name.size() > 0 &&
+        request.resource.data.name.size() < 200 &&
+        request.resource.data.phone is string &&
+        request.resource.data.phone.size() > 0 &&
+        request.resource.data.phone.size() < 50 &&
+        request.resource.data.status == 'nuovo';
+
+      // Solo utenti autenticati possono leggere/modificare/eliminare
+      allow read, update, delete: if request.auth != null;
+    }
+  }
+}
